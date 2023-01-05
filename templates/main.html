@@ -10,11 +10,10 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Document</title>
+		<title>Study Social</title>
 	</head>
 	<body>
-		{% extends 'main.html' %} {% block content %}
-		<h1>Room Template</h1>
-		{% endblock %}
+		{% include 'navbar.html' %} {% block content %} 
+        {% endblock %}
 	</body>
 </html>
