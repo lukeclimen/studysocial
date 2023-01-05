@@ -20,10 +20,14 @@
 			<div>
 				{% for room in rooms %}
 				<div>
+					<span>@{{room.host.username}}</span>
                     <h5>{{room.id}} -- 
 						<!-- Using view 'name' instead of hard coding the url address -->
 						<a href="{% url 'room' room.id %}">{{room.name}} </a>
 					</h5>
+					<small>{{room.topic.name}}</small>
+					<hr/>
+
 				</div>
 				{% endfor %}
 			</div>
